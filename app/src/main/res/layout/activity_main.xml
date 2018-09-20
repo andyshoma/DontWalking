@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_stand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "stand"
+        android:textColor = "#7CFC00"
+        android:textSize="10pt"
+        android:background="#1E90FF"
+        android:layout_marginTop="170pt"
+        android:layout_marginLeft="20pt"/>
+
+    <Button
+        android:id="@+id/button_walk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "walk"
+        android:textColor = "#7CFC00"
+        android:textSize="10pt"
+        android:background="#1E90FF"
+        android:layout_marginTop="170pt"
+        android:layout_marginLeft="65pt"/>
+
+    <Button
+        android:id="@+id/button_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "run"
+        android:textColor = "#7CFC00"
+        android:textSize="10pt"
+        android:background="#1E90FF"
+        android:layout_marginTop="170pt"
+        android:layout_marginLeft="110pt"/>
+
+</RelativeLayout>

@@ -6,47 +6,130 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button_stand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text = "stand"
-        android:textColor = "#7CFC00"
-        android:textSize="10pt"
-        android:background="#1E90FF"
-        android:layout_marginTop="170pt"
-        android:layout_marginLeft="20pt"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hell"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_walk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text = "walk"
-        android:textColor = "#7CFC00"
-        android:textSize="10pt"
-        android:background="#1E90FF"
-        android:layout_marginTop="170pt"
-        android:layout_marginLeft="65pt"/>
+        <TextView
+            android:id="@+id/now_state"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="push start"
+            android:textSize="28sp" />
 
-    <Button
-        android:id="@+id/button_run"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text = "run"
-        android:textColor = "#7CFC00"
-        android:textSize="10pt"
-        android:background="#1E90FF"
-        android:layout_marginTop="170pt"
-        android:layout_marginLeft="110pt"/>
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="50pt" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_stand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "stand"
+                android:textColor = "#7CFC00"
+                android:textSize="10pt"
+                android:background="#1E90FF" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button_walk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "walk"
+                android:textColor = "#7CFC00"
+                android:textSize="10pt"
+                android:background="#1E90FF" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button_run"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "run"
+                android:textColor = "#7CFC00"
+                android:textSize="10pt"
+                android:background="#1E90FF" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "set"
+                android:textColor = "#FF6347"
+                android:textSize="10pt"
+                android:background="#FFA500" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "start"
+                android:textColor = "#CC3333"
+                android:textSize="10pt"
+                android:background="#FF6666" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_purple"
+            android:text="DELETE"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_gravity="center"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>
